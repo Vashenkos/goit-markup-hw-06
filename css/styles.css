@@ -92,21 +92,6 @@ cursor: pointer;
 position: relative;
 }
 
-#becdrop{
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-
-}
-
-
-#becdrop.is-open{ 
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-}
-
-
 
 
 .wraper-conteiner-tel {
@@ -1108,7 +1093,7 @@ height: 623px;
 }
 
 .wraper-conteiner {
-  position: fixed;
+ position: fixed;
   top: 0;
   left: 0;
   width: 100%;
