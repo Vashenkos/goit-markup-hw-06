@@ -438,21 +438,29 @@ height: 72px;
     margin-top: 72px;
   }
 
-  @media (min-resolution: 1dppx) {
-    .main-section {
-      max-width: 100%;
-      background-image: linear-gradient(
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 320px),
+  (min-resolution: 1dppx) {
+  .main-section {
+    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      );
-      background-image: url ("./imgx1/Dark-bgmobi1x.jpg");
-    }
+      ),
+      url(./imgx1/Dark-bgmobi1x.jpg);
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      .main-section {
-        background-image: url (".//imgx1/Dark-bgmobi2x.jpg");
-      }
-    }
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 320px),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(.//imgx1/Dark-bgmobi2x.jpg);
+  }
+}
     .container .icon-container {
       display: none;
     }
@@ -476,18 +484,28 @@ height: 72px;
     background: #2e2f42;
   }
 
-  @media (min-resolution: 1dppx) {
+
     .main-section {
-      max-width: 100%;
-      background-image: url ("../images/tab/Dark-bg1x.jpg");
+      background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url ("../images/tab/Dark-bg1x.jpg");
+  
+  }
+
+ @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 768px),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url"(../images/tab/Dark-bg2x.jpg");
     }
   }
-  @media (min-resolution: 2dppx) {
-    .main-section {
-      max-width: 100%;
-      background-image: url ("../images/tab/Dark-bg2x (1).jpg");
-    }
-  }
+
+
   .container .button-order-service {
     margin-top: 36px;
   }
@@ -1134,12 +1152,13 @@ gap: 24px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
-  
+
   }
 
 .foot {
 width: 768px;
 height: 456px;
+padding: 108px 96px;
 }
 .logoip {
   width: 264px;
@@ -1170,13 +1189,17 @@ display: flex;
 display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 208px;
+height: 80px;
+}
+
 }
 
 
+.nuz-form {
 
 
-
-
+}
 
 
 
@@ -1257,6 +1280,7 @@ display: flex;
 .foot .container {
   /* display: flex; */
   align-items: baseline;
+  background: #2e2f42;
 }
 
 .media-p {
