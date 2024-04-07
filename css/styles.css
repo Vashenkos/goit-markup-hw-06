@@ -1298,6 +1298,18 @@ gap: 24px;
   /* .container {
     max-width: 768px;
   } */
+.foot .container {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-onli {
+  margin-top: 96px;
+}
+
 
   .webstudio-footer {
     margin: 0;
