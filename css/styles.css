@@ -524,6 +524,7 @@ height: 72px;
     padding-top: 188px;
     padding-bottom: 188px;
   } */
+  
 
   .container {
     width: 1158px;
@@ -531,7 +532,9 @@ height: 72px;
   }
 
   .container .main-section {
-    max-width: 1158px;
+    max-width: 1157px;
+    background-image:
+      url("/goit-markup-hw-06/images/desc/people-office\ 1pppppppppp.jpg");
 
   }
 
@@ -1299,7 +1302,7 @@ gap: 24px;
     max-width: 768px;
   } */
 .foot .container {
-    margin-left: 98px;
+    padding: 98px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
