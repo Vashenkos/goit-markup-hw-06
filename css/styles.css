@@ -164,7 +164,6 @@ address {
   }
   .effectiv {
     width: 216px;
-    height: 160px;
   }
 
   .address-use-mobi-com {
@@ -452,6 +451,7 @@ address {
     color: #fff;
     font-weight: 700;
     font-size: 36px;
+    padding-bottom: 71px;
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -465,23 +465,22 @@ address {
         url("/goit-markup-hw-06/imgx1/Dark-bgmobi1x.jpg");
     }
   }
-
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 320px),
-    (min-resolution: 2dppx) {
-    .main-section {
-      background-image: linear-gradient(
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("/goit-markup-hw-06/images/mobi/Dark-bg2x.jpg");
-      background-size: cover;
-    }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 320px),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("/goit-markup-hw-06/images/mobi/Dark-bg2x.jpg");
+    background-size: cover;
   }
+}
 
-  .container .icon-container {
-    display: none;
-  }
+.container .icon-container {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -683,7 +682,6 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 
 @media only screen and (min-width: 320px) {
   .container {
-    width: 320px;
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
@@ -696,7 +694,6 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 8px;
   }
 
   .spdt-p {
@@ -735,8 +732,8 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     width: 100%;
   }
   .section-two {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .spdt {
     text-align: left;
@@ -761,14 +758,14 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 }
 
 @media only screen and (min-width: 1158px) {
-  .container {
+  /* .container {
     width: 1158px;
-  }
+  } */
 
-  /* .section-two {
+  .section-two {
     padding-top: 120px;
     padding-bottom: 120px;
-  } */
+  }
 
   .spdt-ul {
     gap: 24px;
@@ -844,12 +841,12 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 } */
 
 .spdt-p {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 /*----> section-three 3 <-----*/
@@ -867,11 +864,11 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     padding: 32px 0;
   }
 
-  .eam-li {
+  /* .eam-li {
     width: 264px;
     height: 428px;
     margin-bottom: 72px;
-  }
+  } */
   .team-ul {
     padding-left: 16px;
   }
@@ -884,15 +881,13 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     margin: 0 auto;
   }
 
-  .section-three {
-  }
-
   .team-ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 24px;
+    height: calc((100% - 24px) / 2);
   }
 
   .eam-li {
@@ -901,9 +896,6 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     justify-content: center;
     flex-direction: column; */
     gap: 32px;
-  }
-
-  .team {
   }
 }
 
@@ -920,19 +912,18 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     background: #f4f4fd;
     padding-top: 120px;
     padding-bottom: 120px;
+  }
 
-}
-
-/* .section-three {
+  /* .section-three {
   background-color: #f4f4fd;
   padding: 120px 0;
 } */
 
-.work {
-  /* padding: 32px 0; */
-  /* margin-bottom: 8px; */
+  .work {
+    /* padding: 32px 0; */
+    /* margin-bottom: 8px; */
+  }
 }
-
 .team {
   font-weight: 700;
   font-size: 36px;
@@ -1027,16 +1018,23 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
   color: #434455;
   text-align: center;
 }
+
 /*-------> 4 section <---------*/
+
 @media only screen and (min-width: 320px) {
   .our-li {
     margin-bottom: 48px;
   }
+
   .section-four {
     padding-top: 96px;
     padding-bottom: 96px;
   }
+  .our {
+    padding-bottom: 72px;
+  }
 }
+
 @media only screen and (min-width: 768px) {
   .container {
     padding-left: 16px;
@@ -1076,9 +1074,6 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 }
 
 @media only screen and (min-width: 1158px) {
-  /* .container {
-    width: 1158px; */
-  
   .section-four {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1236,9 +1231,9 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     justify-content: center;
     margin-bottom: 16px;
   }
-  .logoip {
+  /* .logoip {
     margin-bottom: 72px;
-  }
+  } */
   .footer-onli {
     /* width: 208px;
    height: 80px; 
@@ -1275,9 +1270,6 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 }
 
 @media only screen and (min-width: 768px) {
-  /* .container {
-    max-width: 768px;
-  } */
   .foot .container {
     display: flex;
     justify-content: flex-start;
@@ -1285,6 +1277,10 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     align-content: center;
     flex-wrap: wrap;
     width: 564px;
+  }
+
+  .media-p {
+    text-align: left;
   }
 
   .footer-onli {
@@ -1295,6 +1291,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
   .webstudio-footer {
     /* margin: 0; */
     align-items: start;
+    justify-content: flex-start;
   }
 
   .logoip {
@@ -1335,19 +1332,7 @@ padding: 108px 96px;
     flex-direction: column;
     align-items: flex-start;
   }
-
-  /* .logoip {
-
-display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: 0;
-} */
 }
-
 @media only screen and (min-width: 1158px) {
   .webstudio-footer {
     margin: o auto;
@@ -1379,6 +1364,11 @@ display: flex;
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
+  }
+  .foot .container {
+    /* display: flex; */
+    align-items: baseline;
+    width: 1122px;
   }
 
   .subs-p {
