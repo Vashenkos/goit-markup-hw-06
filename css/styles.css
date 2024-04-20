@@ -74,9 +74,10 @@ address {
     border: none;
     fill: #2f2f37;
     background-color: #fcfcfc;
-    padding-left: 149px;
+    
     border: none;
     cursor: pointer;
+    margin-left: auto;
   }
 
   .model-windows-tel {
@@ -95,13 +96,13 @@ address {
     z-index: 9999;
   }
 
-  .model-windows-tel {
+  .wraper-conteiner-tel {
     position: fixed;
+    flex-direction: column;
+    display: flex;
     top: 0;
     left: 0;
     /* transform: translate(-50%, -50%); */
-    width: 320px;
-    height: 640px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -109,6 +110,13 @@ address {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
   }
+
+
+.mob-contact {
+  margin-top:auto;
+}
+
+
 
   .menu-heder-mobi {
     font-family: "Roboto", sans-serif;
@@ -254,7 +262,7 @@ address {
     text-align: center;
     color: #fff;
     width: 100%;
-    padding-bottom: 36px;
+    
   }
 }
 
@@ -300,7 +308,8 @@ address {
   /* width: 1158px; */
   width: 100%;
   height: 100%;
-  padding: 0 16px;
+  padding: 0 15px;
+  width: 1158px;
 }
 
 /* .header > .container {
@@ -460,7 +469,7 @@ address {
     color: #fff;
     font-weight: 700;
     font-size: 36px;
-    padding-bottom: 71px;
+    
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -535,7 +544,7 @@ address {
   }
 
   .container .button-order-service {
-    margin-top: 36px;
+    margin-top: 71px;
   }
 
   .effectiv {
@@ -616,6 +625,7 @@ address {
     background-position: center;
     background-size: cover;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: auto;
   }
 
   .button-order-service {
@@ -654,6 +664,7 @@ address {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
+  margin-top: 71px;
 }
 
 .button:hover {
@@ -690,10 +701,11 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 /* ----------секція 2------------ */
 
 @media only screen and (min-width: 320px) {
-  .container {
+  .container  {
     padding-left: 16px;
     padding-right: 16px;
     margin: 0 auto;
+    width: 296px;
   }
 
   .spdt {
@@ -703,6 +715,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
   }
 
   .spdt-p {
@@ -767,9 +780,12 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 }
 
 @media only screen and (min-width: 1158px) {
-  /* .container {
+  .container {
+  padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     width: 1158px;
-  } */
+  }
 
   .section-two {
     padding-top: 120px;
@@ -781,7 +797,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
   }
 
   .spdt {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -794,6 +810,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    font-weight: 400;
   }
 
   .spdt-spdt-p {
@@ -850,7 +867,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 } */
 
 .spdt-p {
-  font-weight: 500;
+  /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -879,7 +896,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     margin-bottom: 72px;
   } */
   .team-ul {
-    padding-left: 16px;
+  
   }
 }
 
@@ -895,8 +912,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    height: calc((100% - 24px) / 2);
+    gap: 64px 24px;
   }
 
   .eam-li {
@@ -910,7 +926,11 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 
 @media only screen and (min-width: 1158px) {
   .container {
-    /* width: 1158px; */
+   padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    width: 1158px;
+
   }
   .team-ul {
     display: flex;
@@ -1000,7 +1020,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
 
 .team-ul {
   /* display: flex; */
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 .eam-li {
@@ -1086,6 +1106,11 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
   .section-four {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
   }
 
   .our-ul {
@@ -1231,6 +1256,14 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
     align-items: center;
   }
 
+.nuz-fotera {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px;
+  }
+
+
+
   .webstudio-footer {
     display: flex;
     align-items: center;
@@ -1260,7 +1293,7 @@ background-image: url(/goit-markup-hw-04/images/icons.svg);
   }
 
   .subs-p {
-    margin-top: 72px;
+    /* margin-top: 72px; */
     text-align: center;
   }
 
@@ -1340,6 +1373,7 @@ padding: 108px 96px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 72px;
   }
 }
 @media only screen and (min-width: 1158px) {
